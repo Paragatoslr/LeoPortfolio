@@ -9,6 +9,10 @@
     #contact,
     #projects {
       height: fit-content;
+      margin-top: -15rem;
+    }
+    #contact{
+        margin-top: -3rem;
     }
   }
   
@@ -18,10 +22,11 @@
     }
     #hamburger-nav {
       display: flex;
+      margin-top: -4rem;
+      margin-bottom: 4rem;
     }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
+    #experience {
+      margin-top: -10rem;
     }
     #profile,
     .section-container {
@@ -43,7 +48,11 @@
       margin: rem;
     }
     .about-containers {
-      margin-top: 0;
+      margin-top: 1rem;
+    }
+
+    .about{
+        margin-top: -20rem;
     }
   }
   
@@ -61,7 +70,11 @@
     }
     footer nav {
       height: fit-content;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    footer .nav-links-container{
+        margin-top: 10rem;
     }
     .about-containers,
     .contact-info-upper-container,
