@@ -14,6 +14,8 @@
     #contact{
         margin-top: -3rem;
     }
+
+    
   }
   
   @media screen and (max-width: 1200px) {
@@ -51,9 +53,7 @@
       margin-top: 1rem;
     }
 
-    .about{
-        margin-top: -20rem;
-    }
+    
   }
   
   @media screen and (max-width: 600px) {
@@ -117,5 +117,6 @@
     .text-container {
       text-align: justify;
     }
+   
   }
   
