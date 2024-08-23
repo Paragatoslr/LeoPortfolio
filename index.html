@@ -31,8 +31,6 @@
       </button>
   </header>
 
-  
-
   <nav class="h-22 items-center justify-around" id="desktop-nav" >
     <div class="logo font-semibold flex text-3xl"><img class="lp_logo w-9 h-10" src="./assets/LP_logo2.svg" alt="Leo's Logo"> Leo P. </div>
     <div>
@@ -298,7 +296,7 @@
     </a>
     </section>
 
-    <section id="projects">
+    <!-- <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -373,7 +371,7 @@
               >
                 Live Demo
               </button>
-            </div>
+            </div>  
           </div>
         </div>
       </div>
@@ -383,9 +381,95 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
         </svg>
     </a>
+    </section> -->
 
+    <section id="projects" class="advance" id="advance">
 
-    </section>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <div class="container mx-auto mt-8 ">
+        <div class="flex justify-center">
+          <div class="flex flex-nowrap gap-8 overflow-x-auto pb-4">
+
+              <!-- Card 1 -->
+              <div class="relative flex-shrink-0 w-96 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./assets/Project1.png');">
+                      <div class="absolute inset-0 "></div>
+                  </div>
+                  <div class="relative flex flex-col justify-end p-6 z-10 h-full">
+                      <!-- <div>
+                          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">
+                             Standard
+                          </h5>
+                      </div> -->
+                      <div class="pt-6">
+                          <!-- <button
+                              class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                              type="button"
+                              data-ripple-light="true"
+                          >
+                              Read More
+                          </button> -->
+                          
+                          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Paragatoslr/LeoPortfolio'"  > Github </button>
+                      </div>
+                  </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="relative flex-shrink-0 w-96 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./assets/project-2.png');">
+                      <div class="absolute inset-0 bg-black opacity-50"></div>
+                  </div>
+                  <div class="relative flex flex-col justify-end p-6 z-10 h-full">
+                      <div>
+                          <h5 class="card-title mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">
+                              Advanced
+                          </h5>
+                      </div>
+                      <div class="pt-6">
+                          <button
+                              class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                              type="button"
+                              data-ripple-light="true"
+                          >
+                              Read More
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="relative flex-shrink-0 w-96 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./assets/project-3.png');">
+                      <div class="absolute inset-0 bg-black opacity-50"></div>
+                  </div>
+                  <div class="relative flex flex-col justify-end p-6 z-10 h-full">
+                      <div>
+                          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">
+                              Public Utility
+                          </h5>
+                      </div>
+                      <div class="pt-6">
+                          <button
+                              class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                              type="button"
+                              data-ripple-light="true"
+                          >
+                              Read More
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <a class="arrow justify-end" href="#contact" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+        </svg>
+    </a>
+  </section>
 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
