@@ -10,6 +10,8 @@
     --warning-color: #feeb3a;
     --moonlight-color: #3a435d;
     --p-text: rgb(85, 85, 85);
+    --ed-txtc: indigo;
+    --ed-head: black;
   }
   .darkmode{
     --base-color: #070b1d;
@@ -20,7 +22,8 @@
     --accent-color: #0071ff;
     --moonlight-color: white;
     --p-text: #ffffff;
-  
+    --ed-txtc: #ffffff;
+    --ed-head: #ffffff;
   
   }
   
@@ -137,8 +140,16 @@
     scroll-behavior: smooth;
   }
   
-  p {
+  p{
     color: var(--p-text);
+  }
+
+  .educationschool{
+    color: var(--ed-txtc);
+  }
+
+  .edhead{
+    color: var(--ed-head);
   }
   
   /* TRANSITION */
