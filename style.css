@@ -68,7 +68,21 @@
     justify-content: center;
     box-sizing: border-box;
   }
-  
+
+  /* Scroll bar */
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    html {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+
+
+
   /* bg color */
   
   .absolute{
@@ -542,9 +556,10 @@
   
   /* PROJECTS SECTION */
   
+  /* This most be adjust if the education and exp will change */
   #projects {
     position: relative;
-    margin-top: 40rem;
+    margin-top: 45rem;
   }
   
   .color-container {
