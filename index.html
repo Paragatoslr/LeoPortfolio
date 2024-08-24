@@ -17,7 +17,7 @@
 <body>
 
     <div class="absolute">
-      <div class="absolute inset-0 justify-center">
+      <div class="absolute inset-0 justify-center" id="abs">
         <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
         <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
         <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
@@ -31,12 +31,21 @@
       </button>
   </header>
 
+  <div class="side-nav hidden sm:flex flex-col fixed right-4 top-1/2 transform -translate-y-1/2 space-y-4 z-50">
+    <!-- <a href="#abs" class="dot-nav" data-tooltip="Section 1"></a> -->
+    <a href="#abs" class="dot-nav" data-tooltip="Hero"></a>
+    <a href="#about" class="dot-nav" data-tooltip="About"></a>
+    <a href="#projects" class="dot-nav" data-tooltip="Projects"></a>
+    <a href="#contact" class="dot-nav" data-tooltip="Contact"></a>
+  </div>
+  
+
   <nav class="h-22 items-center justify-around" id="desktop-nav" >
     <div class="logo font-semibold flex text-3xl"><img class="lp_logo w-9 h-10" src="./assets/LP_logo2.svg" alt="Leo's Logo"> Leo P. </div>
     <div>
         <ul class="nav-links gap-8 list-none ">
             <li><a href="#about">About</a></li>
-            <li><a href="#exp">Experience</a></li>
+            <!-- <li><a href="#exp">Experience</a></li> -->
             <li><a href="#projects">Project</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -53,7 +62,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#exp" onclick="toggleMenu()">Experience</a></li>
+          <!-- <li><a href="#exp" onclick="toggleMenu()">Experience</a></li> -->
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -145,7 +154,7 @@
               <div class="w-full max-w-3xl mx-auto">
               
                   <!-- Vertical Timeline #1 -->
-                  <div class="-my-6">
+                  <div class="-my-16">
                     <div class="edhead text-2xl font-bold ml-24 mb-3">Education History</div>
                     <hr>
                     
@@ -183,7 +192,7 @@
                   <!-- Experience -->
 
                   <div class="-my-6" id="exp">
-                    <div class="edhead text-2xl font-bold ml-24 mb-3 mt-12">Experience </div>
+                    <div class="edhead text-2xl font-bold ml-24 mb-3 mt-24">Experience </div>
                     <hr>
 
                       <!-- Item #1 -->
@@ -276,11 +285,6 @@
     
           </div>
       </div>
-      <a class="arrow justify-end" href="#projects" onclick="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" >
-        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-        </svg>
-    </a>
     </section>
 
     <!-- <section class="experience" id="experience">
@@ -586,11 +590,6 @@
         </div>
       </div>
 
-    <a class="arrow justify-end" href="#contact" onclick="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" >
-        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-        </svg>
-    </a>
   </section>
 
     <section id="contact">

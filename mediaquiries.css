@@ -9,10 +9,10 @@
     #contact,
     #projects {
       height: fit-content;
-      margin-top: -15rem;
+      margin-top: 50rem;
     }
     #contact{
-        margin-top: -3rem;
+        margin-top: 25rem;
     }
 
     
@@ -30,10 +30,11 @@
     #experience {
       margin-top: -10rem;
     }
-    #profile,
+    /* #profile,
     .section-container {
       display: block;
-    }
+      margin-top: 25rem;
+    } */
     .arrow {
       display: none;
     }
@@ -51,6 +52,13 @@
     }
     .about-containers {
       margin-top: 1rem;
+    }
+    #projects {
+      height: fit-content;
+      margin-top: 5rem;
+    }
+    #edhead{
+      margin-top: -10rem;
     }
 
     
@@ -117,6 +125,20 @@
     .text-container {
       text-align: justify;
     }
+
+    #profile{
+      margin-top: -10rem;
+    }
+    #contact{
+      margin-top: 1rem;
+    }
+    #projects{
+      margin-top: -20rem;
+    }
+    #about{
+      margin-top: -17rem;
+    }
+    
    
   }
   

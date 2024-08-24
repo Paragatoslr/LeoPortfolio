@@ -7,7 +7,7 @@
     --seconday-text: #232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
-    --warning-color: #feeb3a;
+    --warning-color: #3B82F6;
     --moonlight-color: #3a435d;
     --p-text: rgb(85, 85, 85);
     --ed-txtc: indigo;
@@ -139,6 +139,48 @@
   }
   
   /*end bg color  */
+
+  /* Dot side var */
+
+
+.side-nav .dot-nav {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #6B7280; /* Gray 500 */
+  transition: background-color 0.3s ease;
+}
+
+.side-nav .dot-nav:hover {
+  background-color: #3B82F6; /* Blue 500 */
+}
+
+.side-nav .dot-nav.active {
+  background-color: #3B82F6; /* Blue 500 */
+}
+
+/* Tooltip Styles */
+.side-nav .dot-nav::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 20px;
+  margin-top: 50%;
+  transform: translateY(-50%);
+  background-color: #3B82F6; /* Blue 500 */
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.side-nav .dot-nav:hover::after {
+  opacity: 1;
+}
+
+
+  /* side var end */
   
   html {
     scroll-behavior: smooth;
