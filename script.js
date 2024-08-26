@@ -6,25 +6,20 @@ function toggleMenu() {
 }
 
 // JavaScript for filtering projects
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-
-filterBtns.forEach(btn => {
+document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const filter = btn.getAttribute('data-filter');
 
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+    // Toggle active class on buttons
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b === btn));
 
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.classList.contains(filter)) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
+    // Show/hide project cards based on the filter
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.classList.toggle('hidden', filter !== 'all' && !card.classList.contains(filter));
     });
   });
 });
+
 
 // For Scroll dot detection and active dot
 
@@ -41,3 +36,34 @@ document.addEventListener("scroll", function () {
     });
   });
   
+
+// Disable right-click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+
+// Disable ctrl + shift + i
+
+document.addEventListener('keydown', function(e) {
+  // Disable F12
+  if (e.key === 'F12') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+Shift+I
+  if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+Shift+C
+  if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+Shift+J
+  if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+U
+  if (e.ctrlKey && e.key === 'U') {
+      e.preventDefault();
+  }
+});
