@@ -60,11 +60,14 @@
       margin-top: -10rem;
     }
 
+    #contact{
+      margin-bottom: 10rem;
+    }
 
     
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     #contact,
     footer {
       height: 40vh;
@@ -89,12 +92,26 @@
       flex-wrap: wrap;
     }
     .contact-info-container {
-      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0.5rem; /* Optional: Add some space between items */
     }
     .contact-info-container p,
     .nav-links li a {
       font-size: 1rem;
     }
+    .contact-info-container p {
+      margin-left: 0.5rem; /* Optional: Add some space between the icon and the text */
+    }
+
+    .contact-info-upper-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; /* or space-between, depending on your preference */
+      align-items: center;
+    }
+
     .experience-sub-title {
       font-size: 1.25rem;
     }
@@ -137,7 +154,5 @@
     #about{
       margin-top: -17rem;
     }
-    
-   
   }
   

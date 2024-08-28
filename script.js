@@ -45,25 +45,64 @@ document.addEventListener('contextmenu', function(e) {
 
 // Disable ctrl + shift + i
 
-document.addEventListener('keydown', function(e) {
-  // Disable F12
-  if (e.key === 'F12') {
-      e.preventDefault();
-  }
-  // Disable Ctrl+Shift+I
-  if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-      e.preventDefault();
-  }
-  // Disable Ctrl+Shift+C
-  if (e.ctrlKey && e.shiftKey && e.key === 'C') {
-      e.preventDefault();
-  }
-  // Disable Ctrl+Shift+J
-  if (e.ctrlKey && e.shiftKey && e.key === 'J') {
-      e.preventDefault();
-  }
-  // Disable Ctrl+U
-  if (e.ctrlKey && e.key === 'U') {
-      e.preventDefault();
-  }
+// document.addEventListener('keydown', function(e) {
+//   if (e.key === 'F12') {
+//       e.preventDefault();
+//   }
+//   // Disable Ctrl+Shift+I
+//   if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+//       e.preventDefault();
+//   }
+//   // Disable Ctrl+Shift+C
+//   if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+//       e.preventDefault();
+//   }
+//   // Disable Ctrl+Shift+J
+//   if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+//       e.preventDefault();
+//   }
+//   // Disable Ctrl+U
+//   if (e.ctrlKey && e.key === 'U') {
+//       e.preventDefault();
+//   }
+// });
+
+// Typing Animation
+
+const words = ["Front-End Developer", "UI/UX DESIGNER", "GRAPHIC DESIGNER"];
+let i = 0;
+let textIndex = 0;
+let currentWord = "";
+let isDeleting = false;
+const speed = 50; // Typing speed in milliseconds
+const delay = 2000; // Delay between word changes
+
+function type() {
+    if (!isDeleting && textIndex < words[i].length) {
+        // Typing
+        currentWord += words[i].charAt(textIndex);
+        textIndex++;
+        document.getElementById("dynamic-text").textContent = currentWord;
+    } else if (isDeleting && textIndex > 0) {
+        // Deleting
+        currentWord = currentWord.substring(0, currentWord.length - 1);
+        textIndex--;
+        document.getElementById("dynamic-text").textContent = currentWord;
+    }
+
+    if (textIndex === words[i].length && !isDeleting) {
+        isDeleting = true;
+        setTimeout(type, delay);
+    } else if (isDeleting && textIndex === 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+        setTimeout(type, 500);
+    } else {
+        setTimeout(type, speed);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    type();
 });
+

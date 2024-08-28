@@ -389,6 +389,12 @@
   .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--moonlight-color);
+    white-space: nowrap;
+    overflow: 2px solif var(--moonlight-color);
+    width: 0;
+    animation: typing 3sec steps(30) forwards, blink-caret 0.75s step-end infinite;
   }
   
   .title {
@@ -559,7 +565,7 @@
   /* This most be adjust if the education and exp will change */
   #projects {
     position: relative;
-    margin-top: 45rem;
+    margin-top: 50rem;
   }
   
   .color-container {
