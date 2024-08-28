@@ -38,9 +38,9 @@ document.addEventListener("scroll", function () {
   
 
 // Disable right-click
-// document.addEventListener('contextmenu', function(e) {
-//   e.preventDefault();
-// });
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
 
 
 // Disable ctrl + shift + i
