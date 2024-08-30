@@ -106,3 +106,43 @@ document.addEventListener("DOMContentLoaded", () => {
     type();
 });
 
+
+// Project menu desktop and mobile
+
+function toggleDropdown() {
+  const dropdownMenu = document.getElementById('dropdown');
+  dropdownMenu.classList.toggle('hidden');
+}
+
+// Function to select a filter and update the dropdown button text
+function selectFilter(filter) {
+  // Update dropdown button text
+  const selectedFilterText = {
+    'all': 'All',
+    'web-design': 'Web/Mobile Design',
+    'Webdev': 'Web Development',
+    'graphic': 'Graphic'
+  };
+  
+  document.getElementById('selectedFilter').textContent = selectedFilterText[filter];
+
+  // Filter projects
+  filterProjects(filter);
+
+  // Close the dropdown
+  toggleDropdown();
+}
+
+// Function to filter projects (sample implementation)
+function filterProjects(filter) {
+  console.log('Filtering projects by:', filter);
+  const allCards = document.querySelectorAll('.project-card');
+
+  allCards.forEach(card => {
+    if (filter === 'all' || card.classList.contains(filter)) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}

@@ -12,6 +12,7 @@
     --p-text: rgb(85, 85, 85);
     --ed-txtc: indigo;
     --ed-head: black;
+    --btn: #535353;
   }
   .darkmode{
     --base-color: #070b1d;
@@ -24,6 +25,7 @@
     --p-text: #ffffff;
     --ed-txtc: #ffffff;
     --ed-head: #ffffff;
+    --btn: white;
   
   }
   
@@ -432,9 +434,12 @@
     border-radius: 2rem;
   }
   
-  .btn-color-1,
-  .btn-color-2 {
+  .btn-color-1 {
     border: rgb(53, 53, 53) 0.1rem solid;
+  }
+
+  .btn-color-2 {
+    border:var(--btn) 0.1rem solid;
   }
   
   .btn-color-1:hover,
@@ -640,3 +645,10 @@
     text-align: center;
   }
   
+  /* filter button */
+
+
+.custom-scrollbar {
+  scrollbar-width: auto; /* Options: auto, thin, or none */
+  scrollbar-color: var(--btn) transparent; /* thumb and track color */
+}
