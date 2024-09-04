@@ -15,7 +15,13 @@ const projects = [
     category: "graphic",
     title: "Best Pasta Poster",
     imageUrl: "./assets/projects/Graphic/ItalianMenu.png",
-    link: "https://github.com/Paragatoslr/LeoPortfolio"
+    link: "https://www.behance.net/leoparagatos"
+  },
+  {
+    category: "graphic",
+    title: "Church Cleaners Rule",
+    imageUrl: "./assets/projects/Graphic/cleanersguide.png",
+    link: "https://www.behance.net/leoparagatos"
   },
   {
     category: "other",
