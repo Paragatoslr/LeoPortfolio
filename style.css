@@ -648,6 +648,7 @@
   /* filter button */
 
 
+/* Scroll bar for project, comment if you don't like */
 .custom-scrollbar {
   scrollbar-width: auto; /* Options: auto, thin, or none */
   scrollbar-color: var(--btn) transparent; /* thumb and track color */

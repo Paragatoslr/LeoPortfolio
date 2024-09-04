@@ -5,21 +5,6 @@ function toggleMenu() {
     icon.classList.toggle("open")
 }
 
-// JavaScript for filtering projects
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const filter = btn.getAttribute('data-filter');
-
-    // Toggle active class on buttons
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b === btn));
-
-    // Show/hide project cards based on the filter
-    document.querySelectorAll('.project-card').forEach(card => {
-      card.classList.toggle('hidden', filter !== 'all' && !card.classList.contains(filter));
-    });
-  });
-});
-
 
 // For Scroll dot detection and active dot
 
@@ -106,43 +91,3 @@ document.addEventListener("DOMContentLoaded", () => {
     type();
 });
 
-
-// Project menu desktop and mobile
-
-function toggleDropdown() {
-  const dropdownMenu = document.getElementById('dropdown');
-  dropdownMenu.classList.toggle('hidden');
-}
-
-// Function to select a filter and update the dropdown button text
-function selectFilter(filter) {
-  // Update dropdown button text
-  const selectedFilterText = {
-    'all': 'All',
-    'web-design': 'Web/Mobile Design',
-    'Webdev': 'Web Development',
-    'graphic': 'Graphic'
-  };
-  
-  document.getElementById('selectedFilter').textContent = selectedFilterText[filter];
-
-  // Filter projects
-  filterProjects(filter);
-
-  // Close the dropdown
-  toggleDropdown();
-}
-
-// Function to filter projects (sample implementation)
-function filterProjects(filter) {
-  console.log('Filtering projects by:', filter);
-  const allCards = document.querySelectorAll('.project-card');
-
-  allCards.forEach(card => {
-    if (filter === 'all' || card.classList.contains(filter)) {
-      card.classList.remove('hidden');
-    } else {
-      card.classList.add('hidden');
-    }
-  });
-}

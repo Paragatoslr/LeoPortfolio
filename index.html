@@ -72,7 +72,7 @@
 
   <section class="profile" id="profile">
       <!-- <div class="section__pic-container ">
-        <img class="rounded-full " src="./assets/mainprofile.jpg" alt="John Doe profile picture" />
+        <img class="rounded-full " src="./assets/pictures/mainprofile.jpg" alt="John Doe profile picture" />
       </div> -->
       
       <div class="section__text">
@@ -317,9 +317,10 @@
         <div id="dropdown" class="z-10  bg-transparent divide-y rounded-lg shadow w-full">
           <ul class="py-1 text-sm" aria-labelledby="dropdownButton">
             <li><button class="filter-btn w-full text-left py-2 px-4" data-filter="all" onclick="selectFilter('all')">All</button></li>
-            <li><button class="filter-btn w-full text-left py-2 px-4" data-filter="web-design" onclick="selectFilter('web-design')">Web/Mobile Design</button></li>
+            <li><button class="filter-btn w-full text-left py-2 px-4" data-filter="uiux" onclick="selectFilter('uiux')">UI/UX</button></li>
             <li><button class="filter-btn w-full text-left py-2 px-4" data-filter="Webdev" onclick="selectFilter('Webdev')">Web Development</button></li>
             <li><button class="filter-btn w-full text-left py-2 px-4" data-filter="graphic" onclick="selectFilter('graphic')">Graphic</button></li>
+            <li><button class="filter-btn w-full text-left py-2 px-4" data-filter="other" onclick="selectFilter('other')">Other</button></li>
           </ul>
         </div>
       </div>
@@ -328,117 +329,21 @@
         <!-- Filter Buttons -->
         <div class="hidden md:flex justify-center space-x-4 mb-8 mt-12">
           <button class="filter-btn active" data-filter="all"><a>All</a></button>
-          <button class="filter-btn" data-filter="web-design"><a>Web/Mobile Design</a></button>
+          <button class="filter-btn" data-filter="uiux"><a>UI/UX</a></button>
           <button class="filter-btn" data-filter="Webdev"><a>Web Development</a></button>
           <button class="filter-btn" data-filter="graphic"><a>Graphic</a></button>
+          <button class="filter-btn" data-filter="other"><a>Others</a></button>
         </div>
       
         <div class="flex justify-center overflow-x-auto pb-4 scroll-smooth custom-scrollbar">
           <div id="cards-container" class=" flex flex-nowrap gap-8 overflow-x-auto pb-4 sm:px-16 snap-x snap-mandatory">
-    
-            <!-- Design Ui/UX -->
-            <div class="flex flex-nowrap space-x-4">
-              <!-- Card 1 -->
-              <!-- <div class="project-card web-design relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center group cursor-pointer" onclick="window.location.href='https://github.com/Paragatoslr/LeoPortfolio'" > -->
-              <div class="project-card web-design relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center group cursor-pointer" onclick="window.location.href='https://www.figma.com/design/vtxl5BVMChSU0CyJtvbtIJ/Leo-web-Portfolio?node-id=10-4&t=zRGEWnz9x0H2k10j-1'">
-                <!-- Background Image -->
-                <div class="project-image absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-110" style="background-image: url('./assets/projects/project-1.png');"></div>
-                
-                <!-- Dark Overlay -->
-                <div class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                
-                <!-- Eye Icon Effect on Hover -->
-                <div class="eye-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20">
-                  <!-- SVG for Eye Icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" height="3rem" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                  </svg>
-                </div>
-                
-                <!-- Content (can be left empty or customized) -->
-                <div class="hover-content absolute inset-x-0 bottom-0 flex justify-center text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20 p-4">
-                  <h1>Portfolio Design</h1>
-                </div>
-              </div>
 
-              <!-- Web Developement -->
-
-              <!-- Card 1 -->
-              <!-- <div class="project-card Webdev relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center group cursor-pointer" onclick="window.location.href='https://github.com/Paragatoslr/LeoPortfolio'" > -->
-              <div class="project-card Webdev relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center group cursor-pointer" onclick="window.location.href='https://github.com/Paragatoslr/LeoPortfolio'">
-                <!-- Background Image -->
-                <div class="project-image absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-110" style="background-image: url('./assets/projects/Web-dev/Portfolio.png');"></div>
-                
-                <!-- Dark Overlay -->
-                <div class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                
-                <!-- Eye Icon Effect on Hover -->
-                <div class="eye-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20">
-                  <!-- SVG for Eye Icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" height="3rem" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                  </svg>
-                </div>
-                
-                <!-- Content (can be left empty or customized) -->
-                <div class="hover-content absolute inset-x-0 bottom-0 flex justify-center text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20 p-4">
-                  <h1>Portfolio Website</h1>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="project-card Webdev relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center group cursor-pointer" onclick="window.location.href='https://github.com/Paragatoslr/LeoPortfolio'">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./assets/project-2.png');">
-                  <div class="absolute inset-0 bg-black opacity-50"></div>
-                </div>
-                <div class="relative flex flex-col justify-end p-6 z-10 h-full">
-                  <h5 class="card-title mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">Advanced</h5>
-                  <button class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85]" type="button">Read More</button>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="project-card graphic relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center group cursor-pointer" onclick="window.location.href='https://github.com/Paragatoslr/LeoPortfolio'">
-                <!-- Background Image -->
-                <div class="project-image absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-110" style="background-image: url('./assets/projects/Graphic/ItalianMenu.png');"></div>
-                
-                <!-- Dark Overlay -->
-                <div class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                
-                <!-- Eye Icon Effect on Hover -->
-                <div class="eye-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20">
-                  <!-- SVG for Eye Icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" height="3rem" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                  </svg>
-                </div>
-                
-                <!-- Content (can be left empty or customized) -->
-                <div class="hover-content absolute inset-x-0 bottom-0 flex justify-center text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20 p-4">
-                  <h1>Best Pasta Poster</h1>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="project-card graphic relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./assets/project-3.png');">
-                  <div class="absolute inset-0 bg-black opacity-50"></div>
-                </div>
-                <div class="relative flex flex-col justify-end p-6 z-10 h-full">
-                  <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">Public Utility</h5>
-                  <button class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85]" type="button">Read More</button>
-                </div>
-              </div>
-            </div>
-      
           </div>
         </div>
       </div>
 
   </section>
+  
 
   <!-- This section is to be continue for adapting showcasing the projects -->
 
@@ -582,7 +487,8 @@
       </nav>
       <p>Copyright &#169; 2024 Leo Paragatos. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="project.js"></script>
   </body>
 
 </html>
