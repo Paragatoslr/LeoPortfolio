@@ -35,8 +35,10 @@ const projects = [
 function createCard(project) {
   const card = document.createElement("div");
   card.className = `project-card ${project.category} relative flex-shrink-0 w-64 h-[30rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-md overflow-hidden snap-center group cursor-pointer`;
-  card.onclick = () => window.location.href = project.link;
-
+  
+  // Open the link in a new tab using window.open with '_blank'
+  card.onclick = () => window.open(project.link, '_blank');
+  
   card.innerHTML = `
     <div class="project-image absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-110" style="background-image: url('${project.imageUrl}');"></div>
     <div class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
