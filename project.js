@@ -24,6 +24,12 @@ const projects = [
     link: "https://www.behance.net/leoparagatos"
   },
   {
+    category: "graphic",
+    title: "Teacher holding card asset",
+    imageUrl: "./assets/projects/Graphic/GraphicAsset.png",
+    link: "https://www.behance.net/leoparagatos"
+  },
+  {
     category: "other",
     title: "Aksyon",
     imageUrl: "./assets/projects/Web-dev/Aksyon.png",
