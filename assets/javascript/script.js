@@ -30,31 +30,31 @@ document.addEventListener('contextmenu', function(e) {
 
 // Disable ctrl + shift + i
 
-// document.addEventListener('keydown', function(e) {
-//   if (e.key === 'F12') {
-//       e.preventDefault();
-//   }
-//   // Disable Ctrl+Shift+I
-//   if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-//       e.preventDefault();
-//   }
-//   // Disable Ctrl+Shift+C
-//   if (e.ctrlKey && e.shiftKey && e.key === 'C') {
-//       e.preventDefault();
-//   }
-//   // Disable Ctrl+Shift+J
-//   if (e.ctrlKey && e.shiftKey && e.key === 'J') {
-//       e.preventDefault();
-//   }
-//   // Disable Ctrl+U
-//   if (e.ctrlKey && e.key === 'U') {
-//       e.preventDefault();
-//   }
-// });
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'F12') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+Shift+I
+  if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+Shift+C
+  if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+Shift+J
+  if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+      e.preventDefault();
+  }
+  // Disable Ctrl+U
+  if (e.ctrlKey && e.key === 'U') {
+      e.preventDefault();
+  }
+});
 
 // Typing Animation
 
-const words = ["Front-End Developer", "UI/UX DESIGNER", "GRAPHIC DESIGNER"];
+const words = ["Front-End Dev", "UI/UX Designs", "GRAPHIC Designs"];
 let i = 0;
 let textIndex = 0;
 let currentWord = "";
@@ -90,4 +90,6 @@ function type() {
 document.addEventListener("DOMContentLoaded", () => {
     type();
 });
+
+
 
