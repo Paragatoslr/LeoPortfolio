@@ -12,6 +12,12 @@ const projects = [
     link: "https://github.com/Paragatoslr/LeoPortfolio"
   },
   {
+    category: "Webdev",
+    title: "ENVX Website",
+    imageUrl: "./assets/projects/Web-dev/evnx.png",
+    link: "https://paragatoslr.github.io/evnx/"
+  },
+  {
     category: "graphic",
     title: "Best Pasta Poster",
     imageUrl: "./assets/projects/Graphic/ItalianMenu.png",
@@ -27,6 +33,12 @@ const projects = [
     category: "graphic",
     title: "Teacher holding card asset",
     imageUrl: "./assets/projects/Graphic/GraphicAsset.png",
+    link: "https://www.behance.net/leoparagatos"
+  },
+  {
+    category: "graphic",
+    title: "Building Maintenanc T-Shirt Design",
+    imageUrl: "./assets/projects/Graphic/TshirtBM.png",
     link: "https://www.behance.net/leoparagatos"
   },
   {
