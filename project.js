@@ -1,10 +1,12 @@
 const projects = [
+  // Category: UI/UX Designs
   {
     category: "uiux",
     title: "Portfolio Design",
     imageUrl: "./assets/projects/UIUX/project-1.png",
     link: "https://www.figma.com/design/vtxl5BVMChSU0CyJtvbtIJ/Leo-web-Portfolio?node-id=10-4&t=zRGEWnz9x0H2k10j-1"
   },
+  // Category: Web Development
   {
     category: "Webdev",
     title: "Portfolio Website",
@@ -17,6 +19,7 @@ const projects = [
     imageUrl: "./assets/projects/Web-dev/evnx.png",
     link: "https://paragatoslr.github.io/evnx/"
   },
+  // Category: Graphic
   {
     category: "graphic",
     title: "Best Pasta Poster",
@@ -41,6 +44,13 @@ const projects = [
     imageUrl: "./assets/projects/Graphic/TshirtBM.png",
     link: "https://www.behance.net/leoparagatos"
   },
+  {
+    category: "graphic",
+    title: "Dental Corner",
+    imageUrl: "./assets/projects/Graphic/DentalCorner.png",
+    link: "https://www.behance.net/leoparagatos"
+  },
+  // Category: Other Projects
   {
     category: "other",
     title: "Aksyon",
